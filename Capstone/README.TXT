@@ -15,8 +15,8 @@ Game Ideas: Chess, Text based game. Board game
 
 Java concepts we learned in class:
 - Utilizes JFrames, JPanels, etc.
-- Animations similar to those we had in cityscape lab
 - GridWorld (if chess)
+- Abstract Class (if chess)
 - Random (if other)
 
 Java concepts researched outside of class:
