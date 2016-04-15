@@ -156,62 +156,62 @@ public class Board
         
         Rock rock21 = new Rock();
         Location loc21 = new Location(Y21, X21);
-        grid.put(loc21, rock21);
+        world.add(loc21, rock21);
         rock21.setColor(Color.WHITE);
         
         Rock rock22 = new Rock();
         Location loc22 = new Location(Y22, X22);
-        grid.put(loc22, rock22);
+        world.add(loc22, rock22);
         rock22.setColor(Color.WHITE);
         
         Rock rock23 = new Rock();
         Location loc23 = new Location(Y23, X23);
-        grid.put(loc23, rock23);
+        world.add(loc23, rock23);
         rock23.setColor(Color.WHITE);
         
         Rock rock24 = new Rock();
         Location loc24 = new Location(Y24, X24);
-        grid.put(loc24, rock24);
+        world.add(loc24, rock24);
         rock24.setColor(Color.WHITE);
         
         Rock rock25 = new Rock();
         Location loc25 = new Location(Y25, X25);
-        grid.put(loc25, rock25);
+        world.add(loc25, rock25);
         rock25.setColor(Color.WHITE);
         
         Rock rock26 = new Rock();
         Location loc26 = new Location(Y26, X26);
-        grid.put(loc26, rock26);
+        world.add(loc26, rock26);
         rock26.setColor(Color.WHITE);
         
         Rock rock27 = new Rock();
         Location loc27 = new Location(Y27, X27);
-        grid.put(loc27, rock27);
+        world.add(loc27, rock27);
         rock27.setColor(Color.WHITE);
         
         Rock rock28 = new Rock();
         Location loc28 = new Location(Y28, X28);
-        grid.put(loc28, rock28);
+        world.add(loc28, rock28);
         rock28.setColor(Color.WHITE);
         
         Rock rock29 = new Rock();
         Location loc29 = new Location(Y29, X29);
-        grid.put(loc29, rock29);
+        world.add(loc29, rock29);
         rock29.setColor(Color.WHITE);
         
         Rock rock30 = new Rock();
         Location loc30 = new Location(Y30, X30);
-        grid.put(loc30, rock30);
+        world.add(loc30, rock30);
         rock30.setColor(Color.WHITE);
         
         Rock rock31 = new Rock();
         Location loc31 = new Location(Y31, X31);
-        grid.put(loc31, rock31);
+        world.add(loc31, rock31);
         rock31.setColor(Color.WHITE);
         
         Rock rock32 = new Rock();
         Location loc32 = new Location(Y32, X32);
-        grid.put(loc32, rock32);
+        world.add(loc32, rock32);
         rock32.setColor(Color.WHITE);
     }
     
