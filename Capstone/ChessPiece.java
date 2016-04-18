@@ -1,6 +1,7 @@
 import info.gridworld.actor.Actor;
 import info.gridworld.grid.Location;
 import java.awt.Color;
+import java.util.ArrayList;
 /**
  * Write a description of abstract class GamePiece here.
  * 
@@ -10,17 +11,30 @@ import java.awt.Color;
 public abstract class ChessPiece extends Actor
 {
     private Color color;
-    private Location[] availableMoves;
+    private Location currentLocation;
+    private boolean hasMoved;
+    private ArrayList<Location> availableMoves;
     /**
      * Default constructor for objects of class GamePiece
      */
-    public ChessPiece(Color color)
+    public ChessPiece(Color color, Location currentLocation, boolean hasMoved)
     {
         this.color = color;
+        this.currentLocation = currentLocation;
+        this.hasMoved = hasMoved;
     }
     
-    public abstract Location[] getAvailableLocations();
+    public Color getColor()
+    {
+        return this.color;
+    }
     
+    public Location getCurrentLocation()
+    {
+        return this.currentLocation;
+    }
+    
+    public abstract ArrayList<Location> getAvailableLocations();
     
     /**
      * An example of a method - replace this comment with your own
@@ -35,9 +49,9 @@ public abstract class ChessPiece extends Actor
      */
     public void move(Location loc)
     {
-        for (Location location : availableMoves)
+        for (int i = 0; i < availableMoves.size(); i++)
         {
-            if (location.equals(loc))
+            if (availableMoves.get(i).equals(loc))
             {
                 this.moveTo(loc);
             }

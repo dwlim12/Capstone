@@ -1,10 +1,14 @@
 #BlueJ class context
-comment0.params=color
-comment0.target=ChessPiece(java.awt.Color)
+comment0.params=color\ currentLocation\ hasMoved
+comment0.target=ChessPiece(java.awt.Color,\ info.gridworld.grid.Location,\ boolean)
 comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ GamePiece\r\n
 comment1.params=
-comment1.target=info.gridworld.grid.Location[]\ getAvailableLocations()
-comment2.params=loc
-comment2.target=void\ move(info.gridworld.grid.Location)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \ that\ describes\ the\ operation\ of\ the\ method\r\n\r\n\ @pre\ \ \ \ \ preconditions\ for\ the\ method\r\n\ \ \ \ \ \ \ \ \ \ (what\ the\ method\ assumes\ about\ the\ method's\ parameters\ and\ class's\ state)\r\n\ @post\ \ \ \ postconditions\ for\ the\ method\r\n\ \ \ \ \ \ \ \ \ \ (what\ the\ method\ guarantees\ upon\ completion)\r\n\ @param\ \ \ y\ \ \ description\ of\ parameter\ y\r\n\ @return\ \ description\ of\ the\ return\ value\r\n
-numComments=3
+comment1.target=java.awt.Color\ getColor()
+comment2.params=
+comment2.target=info.gridworld.grid.Location\ getCurrentLocation()
+comment3.params=
+comment3.target=info.gridworld.grid.Location[]\ getAvailableLocations()
+comment4.params=loc
+comment4.target=void\ move(info.gridworld.grid.Location)
+comment4.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \ that\ describes\ the\ operation\ of\ the\ method\r\n\r\n\ @pre\ \ \ \ \ preconditions\ for\ the\ method\r\n\ \ \ \ \ \ \ \ \ \ (what\ the\ method\ assumes\ about\ the\ method's\ parameters\ and\ class's\ state)\r\n\ @post\ \ \ \ postconditions\ for\ the\ method\r\n\ \ \ \ \ \ \ \ \ \ (what\ the\ method\ guarantees\ upon\ completion)\r\n\ @param\ \ \ y\ \ \ description\ of\ parameter\ y\r\n\ @return\ \ description\ of\ the\ return\ value\r\n
+numComments=5
