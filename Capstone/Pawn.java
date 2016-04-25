@@ -26,19 +26,20 @@ public class Pawn extends ChessPiece
     {
         if (hasStarted)
         {
-            if (this.getColor().equals(Color.WHITE))
+            if (this.getColor().equals(Color.WHITE)) // add exception for obstacle
             {
                 this.availableMoves.clear();
-                Location move = new Location(this.getCurrentLocation().getY() + 1, this.currentLocation.getX());
-                this.availableLocations.add(move);
+                Location move = new Location(this.getCurrentLocation().getCol() + 1, this.getCurrentLocation().getRow());
+                this.availableMoves.add(move);
             }
             if (this.getColor().equals(Color.BLACK))
             {
-                this.availableLocations.clear();
-                Location move = new Location(this.getCurrentLocation().getY() - 1, this.currentLocation.getX());
-                this.availableLocations.add(move);
+                this.availableMoves.clear();
+                Location move = new Location(this.getCurrentLocation().getCol() - 1, this.getCurrentLocation().getRow());
+                this.availableMoves.add(move);
             }
         }
+        return availableMoves;
     }
 
 }
