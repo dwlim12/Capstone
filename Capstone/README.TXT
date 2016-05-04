@@ -20,5 +20,3 @@ Java concepts we learned in class:
 - Random (if other)
 
 Java concepts researched outside of class:
-- Plays audio
-- 

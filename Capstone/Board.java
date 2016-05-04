@@ -15,12 +15,12 @@ import java.util.ArrayList;
 public class Board
 {
     private ActorWorld world;
-    
+    private BoundedGrid<Actor> grid;
     private final int ROWS = 8;
     private final int COLS = 8;
     public Board()
     {
-        BoundedGrid<Actor> grid = new BoundedGrid<Actor>(ROWS,COLS);
+        grid = new BoundedGrid<Actor>(ROWS,COLS);
         world = new ActorWorld(grid);
         addPieces();
         world.show();
@@ -103,7 +103,7 @@ public class Board
         world.add(loc8, rock8);
         
         Location loc9 = new Location(Y9, X9);
-        Pawn pawn1 = new Pawn(Color.BLACK, loc9, false);
+        Pawn pawn1 = new Pawn(Color.BLACK, loc9, false, world);
         world.add(loc9, pawn1);
         
         Rock rock10 = new Rock();

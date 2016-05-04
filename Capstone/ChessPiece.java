@@ -1,4 +1,7 @@
 import info.gridworld.actor.Actor;
+import info.gridworld.actor.ActorWorld;
+import info.gridworld.grid.Grid;
+import info.gridworld.grid.BoundedGrid;
 import info.gridworld.grid.Location;
 import java.awt.Color;
 import java.util.ArrayList;
@@ -13,15 +16,16 @@ public abstract class ChessPiece extends Actor
     private Color color;
     private Location currentLocation;
     private boolean hasMoved;
-    private ArrayList<Location> availableMoves;
+    private ActorWorld world;
     /**
      * Default constructor for objects of class GamePiece
      */
-    public ChessPiece(Color color, Location currentLocation, boolean hasMoved)
+    public ChessPiece(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
     {
         this.color = color;
         this.currentLocation = currentLocation;
         this.hasMoved = hasMoved;
+        this.world = world;
     }
     
     public Color getColor()
@@ -32,6 +36,11 @@ public abstract class ChessPiece extends Actor
     public Location getCurrentLocation()
     {
         return this.currentLocation;
+    }
+    
+    public ActorWorld getWorld()
+    {
+        return this.world;
     }
     
     public abstract ArrayList<Location> getAvailableLocations();
@@ -49,11 +58,17 @@ public abstract class ChessPiece extends Actor
      */
     public void move(Location loc)
     {
+        ArrayList<Location> availableMoves = getAvailableLocations();
         for (int i = 0; i < availableMoves.size(); i++)
         {
             if (availableMoves.get(i).equals(loc))
             {
-                this.moveTo(loc);
+                world.remove(currentLocation);
+                Actor other = world.getGrid().get(loc);
+                if (other != null)
+                {other.removeSelfFromGrid();}
+                currentLocation = loc;
+                world.add(loc, this);
             }
         }
     }
