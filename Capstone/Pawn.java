@@ -28,40 +28,41 @@ public class Pawn extends ChessPiece
 
     public ArrayList<Location> getAvailableLocations()
     {
-        if (hasStarted)
+        if (hasStarted == false)
         {
             if (this.getColor().equals(Color.WHITE)) // add exception for obstacle
             {
                 this.availableMoves.clear();
-                Location move = new Location(this.getCurrentLocation().getCol() + 1, this.getCurrentLocation().getRow());
+                Location move = new Location(this.getCurrentLocation().getRow() - 2, this.getCurrentLocation().getCol());
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
             }
-            if (this.getColor().equals(Color.BLACK))
+            else if (this.getColor().equals(Color.BLACK))
             {
                 this.availableMoves.clear();
-                Location move = new Location(this.getCurrentLocation().getCol() - 1, this.getCurrentLocation().getRow());
+                Location move = new Location(this.getCurrentLocation().getRow() + 2, this.getCurrentLocation().getCol());
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
             }
+            hasStarted = true;
         }
         else
         {
             if (this.getColor().equals(Color.WHITE)) // add exception for obstacle
             {
                 this.availableMoves.clear();
-                Location move = new Location(this.getCurrentLocation().getCol() + 2, this.getCurrentLocation().getRow());
+                Location move = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol());
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
             }
-            if (this.getColor().equals(Color.BLACK))
+            else if (this.getColor().equals(Color.BLACK))
             {
                 this.availableMoves.clear();
-                Location move = new Location(this.getCurrentLocation().getCol() - 2, this.getCurrentLocation().getRow());
+                Location move = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol());
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
             }
-            hasStarted = false;
+            
         }
         return availableMoves;
     }

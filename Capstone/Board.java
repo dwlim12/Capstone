@@ -69,10 +69,10 @@ public class Board
         final int Y32 = 7, X32 = 7;
         
         Grid<Actor> grid = world.getGrid();
-        // filled with rocks for now, will change to pieces later
-        Rock rock1 = new Rock();
+        
         Location loc1 = new Location(Y1, X1);
-        world.add(loc1, rock1);
+        Rook rook1 = new Rook(Color.BLACK, loc1, false, world);
+        world.add(loc1, rook1);
         
         Rock rock2 = new Rock();
         Location loc2 = new Location(Y2, X2);
@@ -106,38 +106,37 @@ public class Board
         Pawn pawn1 = new Pawn(Color.BLACK, loc9, false, world);
         world.add(loc9, pawn1);
         
-        Rock rock10 = new Rock();
         Location loc10 = new Location(Y10, X10);
-        world.add(loc10, rock10);
+        Pawn pawn2 = new Pawn(Color.BLACK, loc10, false, world);
+        world.add(loc10, pawn2);
         
-        Rock rock11 = new Rock();
         Location loc11 = new Location(Y11, X11);
-        world.add(loc11, rock11);
+        Pawn pawn3 = new Pawn(Color.BLACK, loc11, false, world);
+        world.add(loc11, pawn3);
         
-        Rock rock12 = new Rock();
         Location loc12 = new Location(Y12, X12);
-        world.add(loc12, rock12);
+        Pawn pawn4 = new Pawn(Color.BLACK, loc12, false, world);
+        world.add(loc12, pawn4);
         
-        Rock rock13 = new Rock();
         Location loc13 = new Location(Y13, X13);
-        world.add(loc13, rock13);
+        Pawn pawn5 = new Pawn(Color.BLACK, loc13, false, world);
+        world.add(loc13, pawn5);
         
-        Rock rock14 = new Rock();
         Location loc14 = new Location(Y14, X14);
-        world.add(loc14, rock14);
+        Pawn pawn6 = new Pawn(Color.BLACK, loc14, false, world);
+        world.add(loc14, pawn6);
         
-        Rock rock15 = new Rock();
         Location loc15 = new Location(Y15, X15);
-        world.add(loc15, rock15);
+        Pawn pawn7 = new Pawn(Color.BLACK, loc15, false, world);
+        world.add(loc15, pawn7);
         
-        Rock rock16 = new Rock();
         Location loc16 = new Location(Y16, X16);
-        world.add(loc16, rock16);
+        Pawn pawn8 = new Pawn(Color.BLACK, loc16, false, world);
+        world.add(loc16, pawn8);
         
-        Rock rock17 = new Rock();
         Location loc17 = new Location(Y17, X17);
-        world.add(loc17, rock17);
-        rock17.setColor(Color.WHITE);
+        Pawn pawn9 = new Pawn(Color.WHITE, loc17, false, world);
+        world.add(loc17, pawn9);
         
         Rock rock18 = new Rock();
         Location loc18 = new Location(Y18, X18);
