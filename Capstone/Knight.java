@@ -7,18 +7,18 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Rook here.
+ * Write a description of class Knight here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Rook extends ChessPiece
+public class Knight extends ChessPiece
 {
     private ArrayList<Location> availableMoves;
     /**
      * Default constructor for objects of class Rook
      */
-    public Rook(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
+    public Knight(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
     {
         super(color, currentLocation, hasMoved, world);
         availableMoves = new ArrayList<Location>();
@@ -37,7 +37,7 @@ public class Rook extends ChessPiece
                 {this.availableMoves.add(move);}
                 Location move2 = new Location(this.getCurrentLocation().getRow() + count, this.getCurrentLocation().getCol());
                 if (getWorld().getGrid().isValid(move2))
-                {this.availableMoves.add(move2);}
+                {this.availableMoves.add(move);}
                 count++;
             }
             int count2 = 1;

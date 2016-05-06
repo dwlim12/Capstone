@@ -173,10 +173,9 @@ public class Board
         world.add(loc24, rock24);
         rock24.setColor(Color.WHITE);
         
-        Rock rock25 = new Rock();
         Location loc25 = new Location(Y25, X25);
-        world.add(loc25, rock25);
-        rock25.setColor(Color.WHITE);
+        Rook rook3 = new Rook(Color.WHITE, loc25, false, world);
+        world.add(loc25, rook3);
         
         Rock rock26 = new Rock();
         Location loc26 = new Location(Y26, X26);
