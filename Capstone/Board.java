@@ -74,33 +74,33 @@ public class Board
         Rook rook1 = new Rook(Color.BLACK, loc1, false, world);
         world.add(loc1, rook1);
         
-        Rock rock2 = new Rock();
         Location loc2 = new Location(Y2, X2);
-        world.add(loc2, rock2);
+        Knight knight1 = new Knight(Color.BLACK, loc2, false, world);
+        world.add(loc2, knight1);
         
-        Rock rock3 = new Rock();
         Location loc3 = new Location(Y3, X3);
-        world.add(loc3, rock3);
+        Bishop bishop1 = new Bishop(Color.BLACK, loc3, false, world);
+        world.add(loc3, bishop1);
         
-        Rock rock4 = new Rock();
         Location loc4 = new Location(Y4, X4);
-        world.add(loc4, rock4);
+        Queen queen1 = new Queen(Color.BLACK, loc4, false, world);
+        world.add(loc4, queen1);
         
-        Rock rock5 = new Rock();
         Location loc5 = new Location(Y5, X5);
-        world.add(loc5, rock5);
+        King king1 = new King(Color.BLACK, loc5, false, world);
+        world.add(loc5, king1);
         
-        Rock rock6 = new Rock();
         Location loc6 = new Location(Y6, X6);
-        world.add(loc6, rock6);
+        Bishop bishop2 = new Bishop(Color.BLACK, loc6, false, world);
+        world.add(loc6, bishop2);
         
-        Rock rock7 = new Rock();
         Location loc7 = new Location(Y7, X7);
-        world.add(loc7, rock7);
+        Knight knight2 = new Knight(Color.BLACK, loc7, false, world);
+        world.add(loc7, knight2);
         
-        Rock rock8 = new Rock();
         Location loc8 = new Location(Y8, X8);
-        world.add(loc8, rock8);
+        Rook rook2 = new Rook(Color.BLACK, loc8, false, world);
+        world.add(loc8, rook2);
         
         Location loc9 = new Location(Y9, X9);
         Pawn pawn1 = new Pawn(Color.BLACK, loc9, false, world);
@@ -138,79 +138,65 @@ public class Board
         Pawn pawn9 = new Pawn(Color.WHITE, loc17, false, world);
         world.add(loc17, pawn9);
         
-        Rock rock18 = new Rock();
         Location loc18 = new Location(Y18, X18);
-        world.add(loc18, rock18);
-        rock18.setColor(Color.WHITE);
+        Pawn pawn10 = new Pawn(Color.WHITE, loc18, false, world);
+        world.add(loc18, pawn10);
         
-        Rock rock19 = new Rock();
         Location loc19 = new Location(Y19, X19);
-        world.add(loc19, rock19);
-        rock19.setColor(Color.WHITE);
+        Pawn pawn11 = new Pawn(Color.WHITE, loc19, false, world);
+        world.add(loc19, pawn11);
         
-        Rock rock20 = new Rock();
         Location loc20 = new Location(Y20, X20);
-        world.add(loc20, rock20);
-        rock20.setColor(Color.WHITE);
+        Pawn pawn12 = new Pawn(Color.WHITE, loc20, false, world);
+        world.add(loc20, pawn12);
         
-        Rock rock21 = new Rock();
         Location loc21 = new Location(Y21, X21);
-        world.add(loc21, rock21);
-        rock21.setColor(Color.WHITE);
+        Pawn pawn13 = new Pawn(Color.WHITE, loc21, false, world);
+        world.add(loc21, pawn13);
         
-        Rock rock22 = new Rock();
         Location loc22 = new Location(Y22, X22);
-        world.add(loc22, rock22);
-        rock22.setColor(Color.WHITE);
+        Pawn pawn14 = new Pawn(Color.WHITE, loc22, false, world);
+        world.add(loc22, pawn14);
         
-        Rock rock23 = new Rock();
         Location loc23 = new Location(Y23, X23);
-        world.add(loc23, rock23);
-        rock23.setColor(Color.WHITE);
+        Pawn pawn15 = new Pawn(Color.WHITE, loc23, false, world);
+        world.add(loc23, pawn15);
         
-        Rock rock24 = new Rock();
         Location loc24 = new Location(Y24, X24);
-        world.add(loc24, rock24);
-        rock24.setColor(Color.WHITE);
+        Pawn pawn16 = new Pawn(Color.WHITE, loc24, false, world);
+        world.add(loc24, pawn16);
         
         Location loc25 = new Location(Y25, X25);
         Rook rook3 = new Rook(Color.WHITE, loc25, false, world);
         world.add(loc25, rook3);
         
-        Rock rock26 = new Rock();
         Location loc26 = new Location(Y26, X26);
-        world.add(loc26, rock26);
-        rock26.setColor(Color.WHITE);
+        Knight knight3 = new Knight(Color.WHITE, loc26, false, world);
+        world.add(loc26, knight3);
         
-        Rock rock27 = new Rock();
         Location loc27 = new Location(Y27, X27);
-        world.add(loc27, rock27);
-        rock27.setColor(Color.WHITE);
+        Bishop bishop3 = new Bishop(Color.WHITE, loc27, false, world);
+        world.add(loc27, bishop3);
         
-        Rock rock28 = new Rock();
         Location loc28 = new Location(Y28, X28);
-        world.add(loc28, rock28);
-        rock28.setColor(Color.WHITE);
+        Queen queen2 = new Queen(Color.WHITE, loc28, false, world);
+        world.add(loc28, queen2);
         
-        Rock rock29 = new Rock();
         Location loc29 = new Location(Y29, X29);
-        world.add(loc29, rock29);
-        rock29.setColor(Color.WHITE);
+        King king2 = new King(Color.WHITE, loc29, false, world);
+        world.add(loc29, king2);
         
-        Rock rock30 = new Rock();
         Location loc30 = new Location(Y30, X30);
-        world.add(loc30, rock30);
-        rock30.setColor(Color.WHITE);
+        Bishop bishop4 = new Bishop(Color.WHITE, loc30, false, world);
+        world.add(loc30, bishop4);
         
-        Rock rock31 = new Rock();
         Location loc31 = new Location(Y31, X31);
-        world.add(loc31, rock31);
-        rock31.setColor(Color.WHITE);
+        Knight knight4 = new Knight(Color.WHITE, loc31, false, world);
+        world.add(loc31, knight4);
         
-        Rock rock32 = new Rock();
         Location loc32 = new Location(Y32, X32);
-        world.add(loc32, rock32);
-        rock32.setColor(Color.WHITE);
+        Rook rook4 = new Rook(Color.WHITE, loc32, false, world);
+        world.add(loc32, rook4);
     }
     
     /**

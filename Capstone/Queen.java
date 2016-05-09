@@ -7,18 +7,18 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Rook here.
+ * Write a description of class Queen here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Rook extends ChessPiece
+public class Queen extends ChessPiece
 {
     private ArrayList<Location> availableMoves;
     /**
-     * Default constructor for objects of class Rook
+     * Default constructor for objects of class Queen
      */
-    public Rook(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
+    public Queen(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
     {
         super(color, currentLocation, hasMoved, world);
         availableMoves = new ArrayList<Location>();
@@ -38,6 +38,12 @@ public class Rook extends ChessPiece
                 Location move2 = new Location(this.getCurrentLocation().getRow() + count, this.getCurrentLocation().getCol());
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
+                Location move3 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() + count);
+                if (getWorld().getGrid().isValid(move3))
+                {this.availableMoves.add(move3);}
+                Location move4 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() - count);
+                if (getWorld().getGrid().isValid(move4))
+                {this.availableMoves.add(move4);}
                 count++;
             }
             int count2 = 1;
@@ -49,6 +55,12 @@ public class Rook extends ChessPiece
                 Location move2 = new Location(this.getCurrentLocation().getRow(), this.getCurrentLocation().getCol() + count2);
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
+                Location move3 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() + count2);
+                if (getWorld().getGrid().isValid(move3))
+                {this.availableMoves.add(move3);}
+                Location move4 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() - count2);
+                if (getWorld().getGrid().isValid(move4))
+                {this.availableMoves.add(move4);}
                 count2++;
             }
         }
@@ -64,6 +76,12 @@ public class Rook extends ChessPiece
                 Location move2 = new Location(this.getCurrentLocation().getRow() + count, this.getCurrentLocation().getCol());
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
+                Location move3 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() + count);
+                if (getWorld().getGrid().isValid(move3))
+                {this.availableMoves.add(move3);}
+                Location move4 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() - count);
+                if (getWorld().getGrid().isValid(move4))
+                {this.availableMoves.add(move4);}
                 count++;
             }
             int count2 = 1;
@@ -75,6 +93,12 @@ public class Rook extends ChessPiece
                 Location move2 = new Location(this.getCurrentLocation().getRow(), this.getCurrentLocation().getCol() + count2);
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
+                Location move3 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() + count2);
+                if (getWorld().getGrid().isValid(move3))
+                {this.availableMoves.add(move3);}
+                Location move4 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() - count2);
+                if (getWorld().getGrid().isValid(move4))
+                {this.availableMoves.add(move4);}
                 count2++;
             }
         }

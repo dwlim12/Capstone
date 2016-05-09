@@ -66,7 +66,7 @@ public abstract class ChessPiece extends Actor
                 world.remove(currentLocation);
                 Actor other = world.getGrid().get(loc);
                 if (other != null)
-                {other.removeSelfFromGrid();}
+                    {other.removeSelfFromGrid();}
                 currentLocation = loc;
                 world.add(loc, this);
             }

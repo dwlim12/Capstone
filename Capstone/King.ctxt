@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=color\ currentLocation\ hasMoved\ world
+comment0.target=King(java.awt.Color,\ info.gridworld.grid.Location,\ boolean,\ info.gridworld.actor.ActorWorld)
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ King\r\n
+comment1.params=
+comment1.target=java.util.ArrayList\ getAvailableLocations()
+numComments=2

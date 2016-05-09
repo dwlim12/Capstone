@@ -7,18 +7,18 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Rook here.
+ * Write a description of class Bishop here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Rook extends ChessPiece
+public class Bishop extends ChessPiece
 {
     private ArrayList<Location> availableMoves;
     /**
-     * Default constructor for objects of class Rook
+     * Default constructor for objects of class Bishop
      */
-    public Rook(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
+    public Bishop(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
     {
         super(color, currentLocation, hasMoved, world);
         availableMoves = new ArrayList<Location>();
@@ -32,10 +32,10 @@ public class Rook extends ChessPiece
             int count = 1;
             for (int i = 0; i < getWorld().getGrid().getNumRows(); i++)
             {
-                Location move = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol());
+                Location move = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() + count);
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
-                Location move2 = new Location(this.getCurrentLocation().getRow() + count, this.getCurrentLocation().getCol());
+                Location move2 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() - count);
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
                 count++;
@@ -43,10 +43,10 @@ public class Rook extends ChessPiece
             int count2 = 1;
             for (int i = 0; i < getWorld().getGrid().getNumCols(); i++)
             {
-                Location move = new Location(this.getCurrentLocation().getRow(), this.getCurrentLocation().getCol() - count2);
+                Location move = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() + count2);
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
-                Location move2 = new Location(this.getCurrentLocation().getRow(), this.getCurrentLocation().getCol() + count2);
+                Location move2 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() - count2);
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
                 count2++;
@@ -58,10 +58,10 @@ public class Rook extends ChessPiece
             int count = 1;
             for (int i = 0; i < getWorld().getGrid().getNumRows(); i++)
             {
-                Location move = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol());
+                Location move = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() + count);
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
-                Location move2 = new Location(this.getCurrentLocation().getRow() + count, this.getCurrentLocation().getCol());
+                Location move2 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() - count);
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
                 count++;
@@ -69,10 +69,10 @@ public class Rook extends ChessPiece
             int count2 = 1;
             for (int i = 0; i < getWorld().getGrid().getNumCols(); i++)
             {
-                Location move = new Location(this.getCurrentLocation().getRow(), this.getCurrentLocation().getCol() - count2);
+                Location move = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() + count2);
                 if (getWorld().getGrid().isValid(move))
                 {this.availableMoves.add(move);}
-                Location move2 = new Location(this.getCurrentLocation().getRow(), this.getCurrentLocation().getCol() + count2);
+                Location move2 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() - count2);
                 if (getWorld().getGrid().isValid(move2))
                 {this.availableMoves.add(move2);}
                 count2++;
