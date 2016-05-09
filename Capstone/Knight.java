@@ -31,56 +31,136 @@ public class Knight extends ChessPiece
             this.availableMoves.clear();
             Location move = new Location(this.getCurrentLocation().getRow() - 2, this.getCurrentLocation().getCol() + 1);
             if (getWorld().getGrid().isValid(move))
-                {this.availableMoves.add(move);}
+            {
+                if (getWorld().getGrid().get(move) != null)
+                {
+                    if (getWorld().getGrid().get(move).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move);}
+                }
+                else if (getWorld().getGrid().get(move) == null)
+                {
+                    this.availableMoves.add(move);
+                }
+            }
             Location move2 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() + 2);
             if (getWorld().getGrid().isValid(move2))
-                {this.availableMoves.add(move2);}
+            {
+                if (getWorld().getGrid().get(move2) != null)
+                {
+                    if (getWorld().getGrid().get(move2).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move2);}
+                }
+                else if (getWorld().getGrid().get(move2) == null)
+                {
+                    this.availableMoves.add(move2);
+                }
+            }
             Location move3 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() + 2);
             if (getWorld().getGrid().isValid(move3))
-                {this.availableMoves.add(move3);}
+            {
+                if (getWorld().getGrid().get(move3) != null)
+                {
+                    if (getWorld().getGrid().get(move3).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move3);}
+                }
+                else if (getWorld().getGrid().get(move3) == null)
+                {
+                    this.availableMoves.add(move3);
+                }
+            }
             Location move4 = new Location(this.getCurrentLocation().getRow() + 2, this.getCurrentLocation().getCol() + 1);
             if (getWorld().getGrid().isValid(move4))
-                {this.availableMoves.add(move4);}
+            {
+                if (getWorld().getGrid().get(move4) != null)
+                {
+                    if (getWorld().getGrid().get(move4).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move4);}
+                }
+                else if (getWorld().getGrid().get(move4) == null)
+                {
+                    this.availableMoves.add(move4);
+                }
+            }
             Location move5 = new Location(this.getCurrentLocation().getRow() + 2, this.getCurrentLocation().getCol() - 1);
             if (getWorld().getGrid().isValid(move5))
-                {this.availableMoves.add(move5);}
+            {
+                if (getWorld().getGrid().get(move5) != null)
+                {
+                    if (getWorld().getGrid().get(move5).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move5);}
+                }
+                else if (getWorld().getGrid().get(move5) == null)
+                {
+                    this.availableMoves.add(move5);
+                }
+            }
             Location move6 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() - 2);
             if (getWorld().getGrid().isValid(move6))
-                {this.availableMoves.add(move6);}
+            {
+                if (getWorld().getGrid().get(move6) != null)
+                {
+                    if (getWorld().getGrid().get(move6).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move6);}
+                }
+                else if (getWorld().getGrid().get(move6) == null)
+                {
+                    this.availableMoves.add(move6);
+                }
+            }
             Location move7 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() - 2);
             if (getWorld().getGrid().isValid(move7))
-                {this.availableMoves.add(move7);}
+            {
+                if (getWorld().getGrid().get(move7) != null)
+                {
+                    if (getWorld().getGrid().get(move7).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move7);}
+                }
+                else if (getWorld().getGrid().get(move7) == null)
+                {
+                    this.availableMoves.add(move7);
+                }
+            }
             Location move8 = new Location(this.getCurrentLocation().getRow() - 2, this.getCurrentLocation().getCol() - 1);
             if (getWorld().getGrid().isValid(move8))
-                {this.availableMoves.add(move8);}
+            {
+                if (getWorld().getGrid().get(move8) != null)
+                {
+                    if (getWorld().getGrid().get(move8).getColor().equals(Color.BLACK))
+                    {this.availableMoves.add(move8);}
+                }
+                else if (getWorld().getGrid().get(move8) == null)
+                {
+                    this.availableMoves.add(move8);
+                }
+            }
         }
         else if (this.getColor().equals(Color.BLACK))
         {
             this.availableMoves.clear();
             Location move = new Location(this.getCurrentLocation().getRow() - 2, this.getCurrentLocation().getCol() + 1);
             if (getWorld().getGrid().isValid(move))
-                {this.availableMoves.add(move);}
+            {this.availableMoves.add(move);}
             Location move2 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() + 2);
             if (getWorld().getGrid().isValid(move2))
-                {this.availableMoves.add(move2);}
+            {this.availableMoves.add(move2);}
             Location move3 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() + 2);
             if (getWorld().getGrid().isValid(move3))
-                {this.availableMoves.add(move3);}
+            {this.availableMoves.add(move3);}
             Location move4 = new Location(this.getCurrentLocation().getRow() + 2, this.getCurrentLocation().getCol() + 1);
             if (getWorld().getGrid().isValid(move4))
-                {this.availableMoves.add(move4);}
+            {this.availableMoves.add(move4);}
             Location move5 = new Location(this.getCurrentLocation().getRow() + 2, this.getCurrentLocation().getCol() - 1);
             if (getWorld().getGrid().isValid(move5))
-                {this.availableMoves.add(move5);}
+            {this.availableMoves.add(move5);}
             Location move6 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() - 2);
             if (getWorld().getGrid().isValid(move6))
-                {this.availableMoves.add(move6);}
+            {this.availableMoves.add(move6);}
             Location move7 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() - 2);
             if (getWorld().getGrid().isValid(move7))
-                {this.availableMoves.add(move7);}
+            {this.availableMoves.add(move7);}
             Location move8 = new Location(this.getCurrentLocation().getRow() - 2, this.getCurrentLocation().getCol() - 1);
             if (getWorld().getGrid().isValid(move8))
-                {this.availableMoves.add(move8);}
+            {this.availableMoves.add(move8);}
         }
         return availableMoves;
     }

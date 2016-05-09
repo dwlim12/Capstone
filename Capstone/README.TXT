@@ -11,12 +11,15 @@ AUTHORS: Darren Lim
 DEPENDENCIES:
 INSTRUCTIONS TO RUN CODE:
 
-Game Ideas: Chess, Text based game. Board game
+Game: Chess
 
 Java concepts we learned in class:
-- Utilizes JFrames, JPanels, etc.
-- GridWorld (if chess)
-- Abstract Class (if chess)
-- Random (if other)
+- GridWorld
+- Abstract Class
+- Recursion
+- ArrayLists
+- For Loops
 
 Java concepts researched outside of class:
+- Custom Images
+- Algorithms (?)
