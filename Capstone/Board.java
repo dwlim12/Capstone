@@ -242,11 +242,5 @@ public class Board
             throws InterruptedException
     {
         Board game = new Board();
-//         int i = 1;
-//         while (i == 1)
-//         {
-//             game.createNextGeneration();
-//             Thread.sleep(1000);
-//         }
     }
 }

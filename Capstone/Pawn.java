@@ -39,6 +39,12 @@ public class Pawn extends ChessPiece
                     if (getWorld().getGrid().get(move) == null)
                     {this.availableMoves.add(move);}
                 }
+                Location move2 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol());
+                if (getWorld().getGrid().isValid(move2))
+                {
+                    if (getWorld().getGrid().get(move2) == null)
+                    {this.availableMoves.add(move2);}
+                }
                 Location capture1 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() - 1);
                 if (getWorld().getGrid().isValid(capture1))
                 {
@@ -66,6 +72,12 @@ public class Pawn extends ChessPiece
                 {
                     if (getWorld().getGrid().get(move) == null)
                     {this.availableMoves.add(move);}
+                }
+                Location move2 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol());
+                if (getWorld().getGrid().isValid(move2))
+                {
+                    if (getWorld().getGrid().get(move2) == null)
+                    {this.availableMoves.add(move2);}
                 }
                 Location capture1 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() - 1);
                 if (getWorld().getGrid().isValid(capture1))
