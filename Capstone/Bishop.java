@@ -34,10 +34,30 @@ public class Bishop extends ChessPiece
             {
                 Location move = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() + count);
                 if (getWorld().getGrid().isValid(move))
-                {this.availableMoves.add(move);}
+                {
+                    if (getWorld().getGrid().get(move) != null)
+                    {
+                        if (getWorld().getGrid().get(move).getColor().equals(Color.BLACK))
+                            {this.availableMoves.add(move);}
+                    }
+                    else if (getWorld().getGrid().get(move) == null)
+                    {
+                        this.availableMoves.add(move);
+                    }
+                }
                 Location move2 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() - count);
                 if (getWorld().getGrid().isValid(move2))
-                {this.availableMoves.add(move2);}
+                {
+                    if (getWorld().getGrid().get(move2) != null)
+                    {
+                        if (getWorld().getGrid().get(move2).getColor().equals(Color.BLACK))
+                            {this.availableMoves.add(move2);}
+                    }
+                    else if (getWorld().getGrid().get(move2) == null)
+                    {
+                        this.availableMoves.add(move2);
+                    }
+                }
                 count++;
             }
             int count2 = 1;
@@ -45,10 +65,30 @@ public class Bishop extends ChessPiece
             {
                 Location move = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() + count2);
                 if (getWorld().getGrid().isValid(move))
-                {this.availableMoves.add(move);}
+                {
+                    if (getWorld().getGrid().get(move) != null)
+                    {
+                        if (getWorld().getGrid().get(move).getColor().equals(Color.BLACK))
+                            {this.availableMoves.add(move);}
+                    }
+                    else if (getWorld().getGrid().get(move) == null)
+                    {
+                        this.availableMoves.add(move);
+                    }
+                }
                 Location move2 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() - count2);
                 if (getWorld().getGrid().isValid(move2))
-                {this.availableMoves.add(move2);}
+                {
+                    if (getWorld().getGrid().get(move2) != null)
+                    {
+                        if (getWorld().getGrid().get(move2).getColor().equals(Color.BLACK))
+                            {this.availableMoves.add(move2);}
+                    }
+                    else if (getWorld().getGrid().get(move2) == null)
+                    {
+                        this.availableMoves.add(move2);
+                    }
+                }
                 count2++;
             }
         }
@@ -60,10 +100,30 @@ public class Bishop extends ChessPiece
             {
                 Location move = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() + count);
                 if (getWorld().getGrid().isValid(move))
-                {this.availableMoves.add(move);}
+                {
+                    if (getWorld().getGrid().get(move) != null)
+                    {
+                        if (getWorld().getGrid().get(move).getColor().equals(Color.WHITE))
+                            {this.availableMoves.add(move);}
+                    }
+                    else if (getWorld().getGrid().get(move) == null)
+                    {
+                        this.availableMoves.add(move);
+                    }
+                }
                 Location move2 = new Location(this.getCurrentLocation().getRow() - count, this.getCurrentLocation().getCol() - count);
                 if (getWorld().getGrid().isValid(move2))
-                {this.availableMoves.add(move2);}
+                {
+                    if (getWorld().getGrid().get(move2) != null)
+                    {
+                        if (getWorld().getGrid().get(move2).getColor().equals(Color.WHITE))
+                            {this.availableMoves.add(move2);}
+                    }
+                    else if (getWorld().getGrid().get(move2) == null)
+                    {
+                        this.availableMoves.add(move2);
+                    }
+                }
                 count++;
             }
             int count2 = 1;
@@ -71,10 +131,30 @@ public class Bishop extends ChessPiece
             {
                 Location move = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() + count2);
                 if (getWorld().getGrid().isValid(move))
-                {this.availableMoves.add(move);}
+                {
+                    if (getWorld().getGrid().get(move) != null)
+                    {
+                        if (getWorld().getGrid().get(move).getColor().equals(Color.WHITE))
+                            {this.availableMoves.add(move);}
+                    }
+                    else if (getWorld().getGrid().get(move) == null)
+                    {
+                        this.availableMoves.add(move);
+                    }
+                }
                 Location move2 = new Location(this.getCurrentLocation().getRow() + count2, this.getCurrentLocation().getCol() - count2);
                 if (getWorld().getGrid().isValid(move2))
-                {this.availableMoves.add(move2);}
+                {
+                    if (getWorld().getGrid().get(move2) != null)
+                    {
+                        if (getWorld().getGrid().get(move2).getColor().equals(Color.WHITE))
+                            {this.availableMoves.add(move2);}
+                    }
+                    else if (getWorld().getGrid().get(move2) == null)
+                    {
+                        this.availableMoves.add(move2);
+                    }
+                }
                 count2++;
             }
         }

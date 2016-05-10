@@ -40,16 +40,22 @@ public class Pawn extends ChessPiece
                     {this.availableMoves.add(move);}
                 }
                 Location capture1 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() - 1);
-                if (getWorld().getGrid().get(capture1) != null)
+                if (getWorld().getGrid().isValid(capture1))
                 {
-                    if (getWorld().getGrid().get(capture1).getColor().equals(Color.BLACK))
-                    {this.availableMoves.add(capture1);}
+                    if (getWorld().getGrid().get(capture1) != null)
+                    {
+                        if (getWorld().getGrid().get(capture1).getColor().equals(Color.BLACK))
+                        {this.availableMoves.add(capture1);}
+                    }
                 }
                 Location capture2 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() + 1);
-                if (getWorld().getGrid().get(capture2) != null)
+                if (getWorld().getGrid().isValid(capture2))
                 {
-                    if (getWorld().getGrid().get(capture2).getColor().equals(Color.BLACK))
-                    {this.availableMoves.add(capture2);}
+                    if (getWorld().getGrid().get(capture2) != null)
+                    {
+                        if (getWorld().getGrid().get(capture2).getColor().equals(Color.BLACK))
+                        {this.availableMoves.add(capture2);}
+                    }
                 }
             }
             else if (this.getColor().equals(Color.BLACK))
@@ -62,16 +68,22 @@ public class Pawn extends ChessPiece
                     {this.availableMoves.add(move);}
                 }
                 Location capture1 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() - 1);
-                if (getWorld().getGrid().get(capture1) != null)
+                if (getWorld().getGrid().isValid(capture1))
                 {
-                    if (getWorld().getGrid().get(capture1).getColor().equals(Color.WHITE))
-                    {this.availableMoves.add(capture1);}
+                    if (getWorld().getGrid().get(capture1) != null)
+                    {
+                        if (getWorld().getGrid().get(capture1).getColor().equals(Color.WHITE))
+                        {this.availableMoves.add(capture1);}
+                    }
                 }
                 Location capture2 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() + 1);
-                if (getWorld().getGrid().get(capture2) != null)
+                if (getWorld().getGrid().isValid(capture2))
                 {
-                    if (getWorld().getGrid().get(capture2).getColor().equals(Color.WHITE))
-                    {this.availableMoves.add(capture2);}
+                    if (getWorld().getGrid().get(capture2) != null)
+                    {
+                        if (getWorld().getGrid().get(capture2).getColor().equals(Color.WHITE))
+                        {this.availableMoves.add(capture2);}
+                    }
                 }
             }
             hasStarted = true;
@@ -88,16 +100,22 @@ public class Pawn extends ChessPiece
                     {this.availableMoves.add(move);}
                 }
                 Location capture1 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() - 1);
-                if (getWorld().getGrid().get(capture1) != null)
+                if (getWorld().getGrid().isValid(capture1))
                 {
-                    if (getWorld().getGrid().get(capture1).getColor().equals(Color.BLACK))
-                    {this.availableMoves.add(capture1);}
+                    if (getWorld().getGrid().get(capture1) != null)
+                    {
+                        if (getWorld().getGrid().get(capture1).getColor().equals(Color.BLACK))
+                        {this.availableMoves.add(capture1);}
+                    }
                 }
                 Location capture2 = new Location(this.getCurrentLocation().getRow() - 1, this.getCurrentLocation().getCol() + 1);
-                if (getWorld().getGrid().get(capture2) != null)
+                if (getWorld().getGrid().isValid(capture2))
                 {
-                    if (getWorld().getGrid().get(capture2).getColor().equals(Color.BLACK))
-                    {this.availableMoves.add(capture2);}
+                    if (getWorld().getGrid().get(capture2) != null)
+                    {
+                        if (getWorld().getGrid().get(capture2).getColor().equals(Color.BLACK))
+                        {this.availableMoves.add(capture2);}
+                    }
                 }
             }
             else if (this.getColor().equals(Color.BLACK))
@@ -110,16 +128,22 @@ public class Pawn extends ChessPiece
                     {this.availableMoves.add(move);}
                 }
                 Location capture1 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() - 1);
-                if (getWorld().getGrid().get(capture1) != null)
+                if (getWorld().getGrid().isValid(capture1))
                 {
-                    if (getWorld().getGrid().get(capture1).getColor().equals(Color.WHITE))
-                    {this.availableMoves.add(capture1);}
+                    if (getWorld().getGrid().get(capture1) != null)
+                    {
+                        if (getWorld().getGrid().get(capture1).getColor().equals(Color.WHITE))
+                        {this.availableMoves.add(capture1);}
+                    }
                 }
                 Location capture2 = new Location(this.getCurrentLocation().getRow() + 1, this.getCurrentLocation().getCol() + 1);
-                if (getWorld().getGrid().get(capture2) != null)
+                if (getWorld().getGrid().isValid(capture2))
                 {
-                    if (getWorld().getGrid().get(capture2).getColor().equals(Color.WHITE))
-                    {this.availableMoves.add(capture2);}
+                    if (getWorld().getGrid().get(capture2) != null)
+                    {
+                        if (getWorld().getGrid().get(capture2).getColor().equals(Color.WHITE))
+                        {this.availableMoves.add(capture2);}
+                    }
                 }
             }
 
