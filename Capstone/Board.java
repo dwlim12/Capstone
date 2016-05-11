@@ -30,7 +30,7 @@ public class Board
      * Creates the actors and inserts them into their initial starting positions in the grid
      *
      * @pre     the grid has been created
-     * @post    all actors that comprise the initial state of the game have been added to the grid
+     * @post    all chess pieces are added to the grid
      * 
      */
     private void addPieces()
@@ -71,131 +71,131 @@ public class Board
         Grid<Actor> grid = world.getGrid();
         
         Location loc1 = new Location(Y1, X1);
-        Rook rook1 = new Rook(Color.BLACK, loc1, false, world);
+        Rook rook1 = new Rook(Color.BLACK, loc1, world);
         world.add(loc1, rook1);
         
         Location loc2 = new Location(Y2, X2);
-        Knight knight1 = new Knight(Color.BLACK, loc2, false, world);
+        Knight knight1 = new Knight(Color.BLACK, loc2, world);
         world.add(loc2, knight1);
         
         Location loc3 = new Location(Y3, X3);
-        Bishop bishop1 = new Bishop(Color.BLACK, loc3, false, world);
+        Bishop bishop1 = new Bishop(Color.BLACK, loc3, world);
         world.add(loc3, bishop1);
         
         Location loc4 = new Location(Y4, X4);
-        Queen queen1 = new Queen(Color.BLACK, loc4, false, world);
+        Queen queen1 = new Queen(Color.BLACK, loc4, world);
         world.add(loc4, queen1);
         
         Location loc5 = new Location(Y5, X5);
-        King king1 = new King(Color.BLACK, loc5, false, world);
+        King king1 = new King(Color.BLACK, loc5, world);
         world.add(loc5, king1);
         
         Location loc6 = new Location(Y6, X6);
-        Bishop bishop2 = new Bishop(Color.BLACK, loc6, false, world);
+        Bishop bishop2 = new Bishop(Color.BLACK, loc6, world);
         world.add(loc6, bishop2);
         
         Location loc7 = new Location(Y7, X7);
-        Knight knight2 = new Knight(Color.BLACK, loc7, false, world);
+        Knight knight2 = new Knight(Color.BLACK, loc7, world);
         world.add(loc7, knight2);
         
         Location loc8 = new Location(Y8, X8);
-        Rook rook2 = new Rook(Color.BLACK, loc8, false, world);
+        Rook rook2 = new Rook(Color.BLACK, loc8, world);
         world.add(loc8, rook2);
         
         Location loc9 = new Location(Y9, X9);
-        Pawn pawn1 = new Pawn(Color.BLACK, loc9, false, world);
+        Pawn pawn1 = new Pawn(Color.BLACK, loc9, world);
         world.add(loc9, pawn1);
         
         Location loc10 = new Location(Y10, X10);
-        Pawn pawn2 = new Pawn(Color.BLACK, loc10, false, world);
+        Pawn pawn2 = new Pawn(Color.BLACK, loc10, world);
         world.add(loc10, pawn2);
         
         Location loc11 = new Location(Y11, X11);
-        Pawn pawn3 = new Pawn(Color.BLACK, loc11, false, world);
+        Pawn pawn3 = new Pawn(Color.BLACK, loc11, world);
         world.add(loc11, pawn3);
         
         Location loc12 = new Location(Y12, X12);
-        Pawn pawn4 = new Pawn(Color.BLACK, loc12, false, world);
+        Pawn pawn4 = new Pawn(Color.BLACK, loc12, world);
         world.add(loc12, pawn4);
         
         Location loc13 = new Location(Y13, X13);
-        Pawn pawn5 = new Pawn(Color.BLACK, loc13, false, world);
+        Pawn pawn5 = new Pawn(Color.BLACK, loc13, world);
         world.add(loc13, pawn5);
         
         Location loc14 = new Location(Y14, X14);
-        Pawn pawn6 = new Pawn(Color.BLACK, loc14, false, world);
+        Pawn pawn6 = new Pawn(Color.BLACK, loc14, world);
         world.add(loc14, pawn6);
         
         Location loc15 = new Location(Y15, X15);
-        Pawn pawn7 = new Pawn(Color.BLACK, loc15, false, world);
+        Pawn pawn7 = new Pawn(Color.BLACK, loc15, world);
         world.add(loc15, pawn7);
         
         Location loc16 = new Location(Y16, X16);
-        Pawn pawn8 = new Pawn(Color.BLACK, loc16, false, world);
+        Pawn pawn8 = new Pawn(Color.BLACK, loc16, world);
         world.add(loc16, pawn8);
         
         Location loc17 = new Location(Y17, X17);
-        Pawn pawn9 = new Pawn(Color.WHITE, loc17, false, world);
+        Pawn pawn9 = new Pawn(Color.WHITE, loc17, world);
         world.add(loc17, pawn9);
         
         Location loc18 = new Location(Y18, X18);
-        Pawn pawn10 = new Pawn(Color.WHITE, loc18, false, world);
+        Pawn pawn10 = new Pawn(Color.WHITE, loc18, world);
         world.add(loc18, pawn10);
         
         Location loc19 = new Location(Y19, X19);
-        Pawn pawn11 = new Pawn(Color.WHITE, loc19, false, world);
+        Pawn pawn11 = new Pawn(Color.WHITE, loc19, world);
         world.add(loc19, pawn11);
         
         Location loc20 = new Location(Y20, X20);
-        Pawn pawn12 = new Pawn(Color.WHITE, loc20, false, world);
+        Pawn pawn12 = new Pawn(Color.WHITE, loc20, world);
         world.add(loc20, pawn12);
         
         Location loc21 = new Location(Y21, X21);
-        Pawn pawn13 = new Pawn(Color.WHITE, loc21, false, world);
+        Pawn pawn13 = new Pawn(Color.WHITE, loc21, world);
         world.add(loc21, pawn13);
         
         Location loc22 = new Location(Y22, X22);
-        Pawn pawn14 = new Pawn(Color.WHITE, loc22, false, world);
+        Pawn pawn14 = new Pawn(Color.WHITE, loc22, world);
         world.add(loc22, pawn14);
         
         Location loc23 = new Location(Y23, X23);
-        Pawn pawn15 = new Pawn(Color.WHITE, loc23, false, world);
+        Pawn pawn15 = new Pawn(Color.WHITE, loc23, world);
         world.add(loc23, pawn15);
         
         Location loc24 = new Location(Y24, X24);
-        Pawn pawn16 = new Pawn(Color.WHITE, loc24, false, world);
+        Pawn pawn16 = new Pawn(Color.WHITE, loc24, world);
         world.add(loc24, pawn16);
         
         Location loc25 = new Location(Y25, X25);
-        Rook rook3 = new Rook(Color.WHITE, loc25, false, world);
+        Rook rook3 = new Rook(Color.WHITE, loc25, world);
         world.add(loc25, rook3);
         
         Location loc26 = new Location(Y26, X26);
-        Knight knight3 = new Knight(Color.WHITE, loc26, false, world);
+        Knight knight3 = new Knight(Color.WHITE, loc26, world);
         world.add(loc26, knight3);
         
         Location loc27 = new Location(Y27, X27);
-        Bishop bishop3 = new Bishop(Color.WHITE, loc27, false, world);
+        Bishop bishop3 = new Bishop(Color.WHITE, loc27, world);
         world.add(loc27, bishop3);
         
         Location loc28 = new Location(Y28, X28);
-        Queen queen2 = new Queen(Color.WHITE, loc28, false, world);
+        Queen queen2 = new Queen(Color.WHITE, loc28, world);
         world.add(loc28, queen2);
         
         Location loc29 = new Location(Y29, X29);
-        King king2 = new King(Color.WHITE, loc29, false, world);
+        King king2 = new King(Color.WHITE, loc29, world);
         world.add(loc29, king2);
         
         Location loc30 = new Location(Y30, X30);
-        Bishop bishop4 = new Bishop(Color.WHITE, loc30, false, world);
+        Bishop bishop4 = new Bishop(Color.WHITE, loc30, world);
         world.add(loc30, bishop4);
         
         Location loc31 = new Location(Y31, X31);
-        Knight knight4 = new Knight(Color.WHITE, loc31, false, world);
+        Knight knight4 = new Knight(Color.WHITE, loc31, world);
         world.add(loc31, knight4);
         
         Location loc32 = new Location(Y32, X32);
-        Rook rook4 = new Rook(Color.WHITE, loc32, false, world);
+        Rook rook4 = new Rook(Color.WHITE, loc32, world);
         world.add(loc32, rook4);
     }
     

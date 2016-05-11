@@ -7,25 +7,29 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Pawn here.
+ * A chess piece on the board that moves one space forward at a time and can capture enemy pieces
+ * by travelling diagonally.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author @Lim
+ * @version 14 April 2016
  */
 public class Pawn extends ChessPiece
 {
-    private boolean hasStarted; //Boolean to tell whether or not a pawn can move up two spaces
-    private ArrayList<Location> availableMoves;
+    private boolean hasStarted; // Boolean to tell whether or not a pawn can move up two spaces
+    private ArrayList<Location> availableMoves; // ArrayList that contains every pieces available locations to move to
     /**
-     * Default constructor for objects of class Pawn
+     * Constructs a pawn given color, location, and world.
      */
-    public Pawn(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
+    public Pawn(Color color, Location currentLocation, ActorWorld world)
     {
-        super(color, currentLocation, hasMoved, world);
+        super(color, currentLocation, world);
         hasStarted = false;
         availableMoves = new ArrayList<Location>();
     }
-
+    
+    /**
+     * Adds locations that the piece can move based on its algorithm to an ArrayList
+     */
     public ArrayList<Location> getAvailableLocations()
     {
         if (hasStarted == false)

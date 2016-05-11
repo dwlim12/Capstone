@@ -7,23 +7,27 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Rook here.
+ * A chess piece that can move to and capture an enemy piece in any space on the board in the same 
+ * column or row as long as there is not a piece blocking the way
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author @Lim
+ * @version 14 April 2016
  */
 public class Rook extends ChessPiece
 {
     private ArrayList<Location> availableMoves;
     /**
-     * Default constructor for objects of class Rook
+     * Constructs a rook given color, location, and world.
      */
-    public Rook(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
+    public Rook(Color color, Location currentLocation, ActorWorld world)
     {
-        super(color, currentLocation, hasMoved, world);
+        super(color, currentLocation, world);
         availableMoves = new ArrayList<Location>();
     }
-
+    
+    /**
+     * Adds locations that the piece can move based on its algorithm to an ArrayList
+     */
     public ArrayList<Location> getAvailableLocations()
     {
         if (this.getColor().equals(Color.WHITE)) // add exception for obstacle

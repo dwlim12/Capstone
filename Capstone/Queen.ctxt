@@ -1,7 +1,8 @@
 #BlueJ class context
-comment0.params=color\ currentLocation\ hasMoved\ world
-comment0.target=Queen(java.awt.Color,\ info.gridworld.grid.Location,\ boolean,\ info.gridworld.actor.ActorWorld)
-comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Queen\r\n
+comment0.params=color\ currentLocation\ world
+comment0.target=Queen(java.awt.Color,\ info.gridworld.grid.Location,\ info.gridworld.actor.ActorWorld)
+comment0.text=\r\n\ Constructs\ a\ queen\ given\ color,\ location,\ and\ world.\r\n
 comment1.params=
 comment1.target=java.util.ArrayList\ getAvailableLocations()
+comment1.text=\r\n\ Adds\ locations\ that\ the\ piece\ can\ move\ based\ on\ its\ algorithm\ to\ an\ ArrayList\r\n
 numComments=2

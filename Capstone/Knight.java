@@ -7,23 +7,27 @@ import java.awt.Color;
 import java.util.ArrayList;
 
 /**
- * Write a description of class Knight here.
+ * A chess piece on the board that can move to and capture enemy pieces in locations L-shaped patterns way
+ * from its current location
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author @Lim
+ * @version 14 April 2016
  */
 public class Knight extends ChessPiece
 {
     private ArrayList<Location> availableMoves;
     /**
-     * Default constructor for objects of class Knight
+     * Constructs a knight given color, location, and world.
      */
-    public Knight(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
+    public Knight(Color color, Location currentLocation, ActorWorld world)
     {
-        super(color, currentLocation, hasMoved, world);
+        super(color, currentLocation, world);
         availableMoves = new ArrayList<Location>();
     }
-
+    
+    /**
+     * Adds locations that the piece can move based on its algorithm to an ArrayList
+     */
     public ArrayList<Location> getAvailableLocations()
     {
         if (this.getColor().equals(Color.WHITE)) // add exception for obstacle

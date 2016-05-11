@@ -6,25 +6,24 @@ import info.gridworld.grid.Location;
 import java.awt.Color;
 import java.util.ArrayList;
 /**
- * Write a description of abstract class GamePiece here.
+ * An actor on the game board grid that moves and takes pieces based on type of piece and color
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author @Lim
+ * @version 14 April 2016
  */
 public abstract class ChessPiece extends Actor
 {
     private Color color;
     private Location currentLocation;
-    private boolean hasMoved;
     private ActorWorld world;
     /**
-     * Default constructor for objects of class GamePiece
+     * Creates a chess piece of specified color in the location on the grid in a world
      */
-    public ChessPiece(Color color, Location currentLocation, boolean hasMoved, ActorWorld world)
+    public ChessPiece(Color color, Location currentLocation, ActorWorld world)
     {
+        super();
         this.color = color;
         this.currentLocation = currentLocation;
-        this.hasMoved = hasMoved;
         this.world = world;
     }
     
@@ -46,15 +45,8 @@ public abstract class ChessPiece extends Actor
     public abstract ArrayList<Location> getAvailableLocations();
     
     /**
-     * An example of a method - replace this comment with your own
-     *  that describes the operation of the method
-     *
-     * @pre     preconditions for the method
-     *          (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *          (what the method guarantees upon completion)
-     * @param   y   description of parameter y
-     * @return  description of the return value
+     * Takes a location in the world and moves the piece there if it is in the ArrayList of
+     * available locations for the piece
      */
     public void move(Location loc)
     {
